@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="music-player">
+        <div class="album-cover"></div>
+        <div class="track-info">
+            <h2 id="track-title">Thrusting</h2>
+            <p id="track-details">Artist Name Unknown</p>
+        </div>
+        <div class="controls">
+            <button id="prev">&#9664;</button>
+            <button id="backward" class="time-button">10s</button>
+            <button id="play">&#9654;</button>
+            <button id="forward" class="time-button">10s</button>
+            <button id="next">&#9654;&#9654;</button>
+        </div>
+        <div class="progress-bar">
+            <span class="volume-icon" id="volume-icon">🔊</span>
+            <span id="current-time">0:00</span>
+            <div class="progress">
+                <div id="progress-fill"></div>
+            </div>
+            <span id="total-time">3:30</span>
+        </div>
+    </div>
+
+    <audio id="audio-player" src="thrusting.wav"></audio>
+    <script src="script.js"></script>
+</body>
+</html>
